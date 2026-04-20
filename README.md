@@ -2,7 +2,7 @@
 ## 👥 Anggota Kelompok
 | **Nama** | **NPM** |
 | ------------- | ------------- |
-| Dheka Airlangga | 4524210001 |
+| Dheka | 4524210001 |
 | Naila Putri | 4524210053 |
 | Maghfiroh | 4524210040 |
 | Az-Zahra | 4524210018 |
