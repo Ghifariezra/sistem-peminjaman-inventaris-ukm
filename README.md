@@ -6,7 +6,7 @@
 | Naila Putri | 4524210053 |
 | Maghfiroh | 4524210040 |
 | Az-Zahra | 4524210018 |
-| Ghifari Ezra Ramadhan | 4524210041 |
+| Ghifari Ezra Ramadhan - Ganteng sedunia | 4524210041 |
 
 # 🚨 Masalah
 [Deskripsikan kendala atau masalah utama yang saat ini dihadapi oleh UKM dalam mengelola pencatatan dan pelacakan barang inventaris mereka di sini...]
