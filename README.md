@@ -2,11 +2,11 @@
 ## 👥 Anggota Kelompok
 | **Nama** | **NPM** |
 | ------------- | ------------- |
-| Dheka | 4524210001 |
+| Dheka Airlangga | 4524210027 |
 | Naila Putri | 4524210053 |
-| Maghfiroh | 4524210040 |
-| Az-Zahra | 4524210018 |
-| Ghifari Ezra Ramadhan - Ganteng sedunia | 4524210041 |
+| Maghfiroh Lisabiliana | 4524210040 |
+| Az-Zahra Putri| 4524210018 |
+| Ghifari Ezra Ramadhan | 4524210041 |
 
 # 🚨 Masalah
 [Deskripsikan kendala atau masalah utama yang saat ini dihadapi oleh UKM dalam mengelola pencatatan dan pelacakan barang inventaris mereka di sini...]
