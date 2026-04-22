@@ -15,21 +15,26 @@ Selain itu, terdapat risiko administratif yang tinggi karena ketiadaan dokumen s
 
 # 🔍 Analisis
 **1. Aktor**
-1. Admin (Pengelola Sistem & Inventaris) 
+**1. Admin (Pengelola Sistem & Inventaris)** 
+
 Aktor dengan hak akses tertinggi (Super User) yang bertugas:
-Kelola Pengguna: Mengatur akun dan hak akses Notaris serta Peminjam.
-Kelola Inventaris: Menginput barang baru dan memperbarui status barang (misal: rusak/diservis) tanpa menghapus riwayat data.
-Verifikasi Bukti: Mengecek keabsahan foto serah terima dan pengembalian barang.
-2. Notaris (Otorisator) 
+- Kelola Pengguna: Mengatur akun dan hak akses Notaris serta Peminjam.
+- Kelola Inventaris: Menginput barang baru dan memperbarui status barang (misal: rusak/diservis) tanpa menghapus riwayat data.
+- Verifikasi Bukti: Mengecek keabsahan foto serah terima dan pengembalian barang.
+
+**2. Notaris (Otorisator)** 
+
 Pihak berwenang yang memvalidasi transaksi peminjaman:
-Tinjau Pengajuan: Memeriksa detail permohonan dan surat dari peminjam.
-Persetujuan (Approval): Memberikan keputusan mutlak (ACC atau Tolak).
-Pantau Riwayat: Melihat rekam jejak status barang untuk kebutuhan audit.
-3. Peminjam (Pengguna Eksternal) 
+- Tinjau Pengajuan: Memeriksa detail permohonan dan surat dari peminjam.
+- Persetujuan (Approval): Memberikan keputusan mutlak (ACC atau Tolak).
+- Pantau Riwayat: Melihat rekam jejak status barang untuk kebutuhan audit.
+
+**3. Peminjam (Pengguna Eksternal)** 
+
 Pihak luar (misal: UKM/Himpunan) yang meminjam barang:
-Pengajuan Pinjaman: Mengecek stok barang dan mengajukan permohonan dengan melampirkan surat resmi.
-Unggah Bukti: Wajib melampirkan foto saat mengambil dan mengembalikan barang.
-Tanggung Jawab: Menyetujui risiko atas kerusakan atau keterlambatan pengembalian.
+- Pengajuan Pinjaman: Mengecek stok barang dan mengajukan permohonan dengan melampirkan surat resmi.
+- Unggah Bukti: Wajib melampirkan foto saat mengambil dan mengembalikan barang.
+- Tanggung Jawab: Menyetujui risiko atas kerusakan atau keterlambatan pengembalian.
 
 
 ## 📋 Bagian 2: Analisis Perbandingan SOP
