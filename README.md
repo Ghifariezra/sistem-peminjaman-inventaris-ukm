@@ -7,7 +7,7 @@
 | Maghfiroh | 4524210040 |
 | Az-Zahra Putri| 4524210018 |
 | Ghifari Ezra Ramadhan | 4524210041 |
-
+g
 # 🚨 Masalah
 [Deskripsikan kendala atau masalah utama yang saat ini dihadapi oleh UKM dalam mengelola pencatatan dan pelacakan barang inventaris mereka di sini...]
 
@@ -15,44 +15,46 @@
 **1. Aktor**
 [Tuliskan ...] 
 
-## Bagian 2: Analisis Perbandingan SOP (Sebelum dan Sesudah Implementasi Sistem)
-Bagian ini menguraikan transformasi prosedur operasional (SOP) pengelolaan inventaris UKM dari sistem pencatatan manual menjadi sistem informasi berbasis aplikasi. Perubahan ini bertujuan untuk menyelesaikan masalah pendataan dan meningkatkan efisiensi, transparansi, serta akurasi data.
+## 📋 Bagian 2: Analisis Perbandingan SOP
+Klik pada masing-masing aspek di bawah ini untuk melihat detail perbandingan alur kerja sebelum dan sesudah implementasi sistem:
 
-### 1. Pencatatan & Data Masuk (Input Barang Baru)
-* **SOP Saat Ini (Manual):** Pencatatan barang masih bergantung pada pengumpulan struk fisik yang diserahkan ke Bendahara. Tidak ada sistem kodifikasi/nomor seri pada barang, dan *database* (Microsoft Excel) hanya digunakan untuk mendata aset-aset berukuran besar, sementara barang kecil tidak terdata secara digital.
-* **SOP Usulan (Sistem Aplikasi):**
-  * **Digitalisasi Data:** Semua barang (besar maupun kecil) langsung diinput ke dalam *database* sistem.
-  * **Auto-Generate ID:** Sistem akan otomatis membuatkan kode unik (ID Barang/Barcode) untuk setiap entri baru sehingga pelabelan lebih terstandar.
-  * **Integrasi Berkas:** Struk pembelian dapat difoto dan diunggah langsung ke sistem, sehingga Bendahara dapat mengaksesnya secara *real-time* tanpa perlu serah terima kertas fisik.
+<details>
+<summary><b>1. Pencatatan & Data Masuk (Input Barang Baru)</b></summary><br>
 
-### 2. Peminjaman (Alur Keluar Barang)
-* **SOP Saat Ini (Manual):** Peminjam (eksternal) harus mengirim surat fisik/PDF, lalu pengurus mengecek ketersediaan barang secara manual. Batas waktu peminjaman tidak memiliki standar baku, dan bukti serah terima hanya berupa kiriman foto barang via *chat* WhatsApp.
-* **SOP Usulan (Sistem Aplikasi):**
-  * **E-Form Peminjaman:** Peminjam mengisi form pengajuan langsung melalui sistem. Sistem akan otomatis menolak pengajuan jika status barang sedang "Dipinjam" atau "Rusak".
-  * **Standarisasi Durasi:** Sistem akan membatasi rentang waktu maksimal peminjaman (misalnya maksimal 7 hari).
-  * **Digital Handover:** Serah terima divalidasi melalui sistem (klik tombol "Terima Barang" oleh peminjam dan admin) sebagai pengganti Berita Acara Serah Terima (BAST), yang tersimpan otomatis di log *database*.
+* **❌ SOP Manual:** Pencatatan bergantung pada struk fisik. Tidak ada kodifikasi/nomor seri terpusat, dan *database* (Excel) hanya digunakan untuk mendata aset berukuran besar.
+* **✅ SOP Sistem:** Semua barang langsung diinput ke *database*. Sistem otomatis membuatkan kode unik (ID/Barcode) dan struk pembelian dapat diunggah langsung ke sistem secara *real-time*.
+</details>
 
-### 3. Pengembalian & Pelacakan (*Tracking*)
-* **SOP Saat Ini (Manual):** Konfirmasi pengembalian hanya via foto di grup *chat*. Tidak ada pelacakan terpusat siapa yang sedang memegang barang, sehingga rentan terjadi kehilangan atau kerusakan yang tidak bisa dipertanggungjawabkan akibat pesan *chat* yang tertumpuk.
-* **SOP Usulan (Sistem Aplikasi):**
-  * **Notifikasi Otomatis:** Sistem akan mengirimkan *reminder* (peringatan) otomatis jika masa pinjam barang hampir habis atau sudah *overdue* (terlambat).
-  * **Dashboard Tracking:** Admin dapat melihat dasbor interaktif yang menampilkan daftar barang yang sedang keluar, siapa peminjamnya, dan kapan tenggat waktu pengembaliannya.
-  * **Verifikasi Kondisi:** Saat pengembalian, admin harus memperbarui status kondisi barang di sistem (Baik/Rusak) sebelum transaksi peminjaman dianggap "Selesai".
+<details>
+<summary><b>2. Peminjaman (Alur Keluar Barang)</b></summary><br>
 
-### 4. Perawatan & Pengecekan Rutin (*Stock Opname*)
-* **SOP Saat Ini (Manual):** Pengecekan bersifat reaktif (menunggu barang habis/rusak baru melapor). Pencatatan kondisi barang sangat terbatas, sering menyebabkan selisih data antara catatan Excel dengan fisik barang di ruangan.
-* **SOP Usulan (Sistem Aplikasi):**
-  * **Fitur Audit Cepat:** Dilengkapi fitur *Stock Opname* berkala di mana admin tinggal mencocokkan barang fisik dengan daftar di sistem.
-  * **Minimum Stock Alert:** Untuk barang habis pakai (seperti tinta/ATK), sistem akan memberikan peringatan jika stok sudah mencapai batas minimum, sehingga pengadaan bisa dilakukan sebelum barang benar-benar habis.
+* **❌ SOP Manual:** Peminjam mengirim surat fisik/PDF. Tidak ada standar batas waktu peminjaman, dan bukti serah terima hanya mengandalkan kiriman foto via *chat* WhatsApp.
+* **✅ SOP Sistem:** Pengajuan melalui *E-Form*. Sistem menolak otomatis jika barang berstatus "Dipinjam" atau "Rusak", membatasi durasi maksimal peminjaman, dan tervalidasi melalui *Digital Handover* di sistem.
+</details>
 
-### 5. Penghapusan/Pemutihan Barang Keluar
-* **SOP Saat Ini (Manual):** Belum ada alur pemutihan aset yang jelas. Barang yang hilang/rusak total hanya dilaporkan secara lisan ke Ketua/Bendahara, dan datanya hanya diubah keterangannya menjadi "dalam servis/diganti", membuat daftar barang aktif menjadi rancu.
-* **SOP Usulan (Sistem Aplikasi):**
-  * **Status Barang Dinamis:** Sistem menyediakan opsi status "Write-off" atau "Dihapus/Pemutihan".
-  * **Approval Workflow:** Penghapusan barang dari daftar aktif harus melalui klik persetujuan (*digital approval*) dari akun Ketua.
-  * **Arsip Terpisah:** Data barang yang sudah dihapus tidak akan hilang, melainkan dipindahkan ke tabel *History/Archive* agar tidak mengganggu jumlah aset aktif namun tetap bisa dilacak riwayatnya untuk keperluan Laporan Pertanggungjawaban (LPJ).
+<details>
+<summary><b>3. Pengembalian & Pelacakan (Tracking)</b></summary><br>
+
+* **❌ SOP Manual:** Konfirmasi pengembalian via grup *chat* rentan tertumpuk. Tidak ada pelacakan terpusat siapa yang memegang barang.
+* **✅ SOP Sistem:** Terdapat *Dashboard Tracking* interaktif. Sistem mengirim notifikasi *reminder* keterlambatan, dan mewajibkan admin memverifikasi kondisi barang (Baik/Rusak) sebelum transaksi selesai.
+</details>
+
+<details>
+<summary><b>4. Perawatan & Pengecekan Rutin (Stock Opname)</b></summary><br>
+
+* **❌ SOP Manual:** Pengecekan bersifat reaktif (menunggu barang habis/rusak), sering menyebabkan selisih data antara catatan dan fisik ruangan.
+* **✅ SOP Sistem:** Dilengkapi fitur Audit Cepat (*Stock Opname* berkala) dan *Minimum Stock Alert* untuk memberi peringatan jika barang habis pakai (seperti ATK/tinta) perlu di-restock.
+</details>
+
+<details>
+<summary><b>5. Penghapusan/Pemutihan Barang Keluar</b></summary><br>
+
+* **❌ SOP Manual:** Barang hilang/rusak dilaporkan secara lisan. Data hanya diubah menjadi "dalam servis", membuat daftar barang aktif rancu.
+* **✅ SOP Sistem:** Menggunakan *Approval Workflow* dari akun Ketua untuk status "Write-off". Data yang dihapus dipindahkan ke tabel *Archive* sehingga tidak mengganggu jumlah aset aktif namun tetap tercatat untuk LPJ.
+</details>
 
 **3. Use Case**
+[Tuliskan ...] 
 
 # 💡 Solusi
 [Tuliskan rancangan solusi yang ditawarkan. Sebutkan fitur-fitur unggulan dari Sistem Inventaris UKM yang akan dibuat dan bagaimana sistem tersebut dapat menyelesaikan masalah yang ada...]
