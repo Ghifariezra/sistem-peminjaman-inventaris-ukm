@@ -14,22 +14,21 @@ Pengelolaan inventaris saat ini terkendala oleh sistem yang terfragmentasi dan m
 Selain itu, terdapat risiko administratif yang tinggi karena ketiadaan dokumen serah terima formal dan durasi pinjam yang tidak diatur secara baku oleh organisasi. Minimnya jadwal stock opname rutin serta ketiadaan prosedur pemutihan aset yang jelas mengakibatkan database tetap dipenuhi data barang rusak atau hilang, yang pada akhirnya mengaburkan akuntabilitas laporan pertanggungjawaban UKM.
 
 # 🔍 Analisis
-**1. Aktor**
-1. Admin (Pengelola Sistem & Inventaris) 
-Aktor dengan hak akses tertinggi (Super User) yang bertugas:
-Kelola Pengguna: Mengatur akun dan hak akses Notaris serta Peminjam.
-Kelola Inventaris: Menginput barang baru dan memperbarui status barang (misal: rusak/diservis) tanpa menghapus riwayat data.
-Verifikasi Bukti: Mengecek keabsahan foto serah terima dan pengembalian barang.
-2. Notaris (Otorisator) 
-Pihak berwenang yang memvalidasi transaksi peminjaman:
-Tinjau Pengajuan: Memeriksa detail permohonan dan surat dari peminjam.
-Persetujuan (Approval): Memberikan keputusan mutlak (ACC atau Tolak).
-Pantau Riwayat: Melihat rekam jejak status barang untuk kebutuhan audit.
-3. Peminjam (Pengguna Eksternal) 
-Pihak luar (misal: UKM/Himpunan) yang meminjam barang:
-Pengajuan Pinjaman: Mengecek stok barang dan mengajukan permohonan dengan melampirkan surat resmi.
-Unggah Bukti: Wajib melampirkan foto saat mengambil dan mengembalikan barang.
-Tanggung Jawab: Menyetujui risiko atas kerusakan atau keterlambatan pengembalian.
+## Aktor
+**1. Admin (Pengelola Sistem & Inventaris)**<br>Aktor dengan hak akses tertinggi (Super User) yang bertugas:
+- **Kelola Pengguna:** Mengatur akun dan hak akses Notaris serta Peminjam.
+- **Kelola Inventaris:** Menginput barang baru dan memperbarui status barang (misal: rusak/diservis) tanpa menghapus riwayat data.
+- **Verifikasi Bukti:** Mengecek keabsahan foto serah terima dan pengembalian barang.
+  
+**2. Notaris (Otorisator)**<br>Pihak berwenang yang memvalidasi transaksi peminjaman:
+- **Tinjau Pengajuan:** Memeriksa detail permohonan dan surat dari peminjam.
+- **Persetujuan (Approval):** Memberikan keputusan mutlak (ACC atau Tolak).
+- **Pantau Riwayat:** Melihat rekam jejak status barang untuk kebutuhan audit.
+
+**3. Peminjam (Pengguna Eksternal)**<br>Pihak luar (misal: UKM/Himpunan) yang meminjam barang:
+- **Pengajuan Pinjaman:** Mengecek stok barang dan mengajukan permohonan dengan melampirkan surat resmi.
+- **Unggah Bukti:** Wajib melampirkan foto saat mengambil dan mengembalikan barang.
+- **Tanggung Jawab:** Menyetujui risiko atas kerusakan atau keterlambatan pengembalian.
 
 
 ## 📋 Bagian 2: Analisis Perbandingan SOP
@@ -74,4 +73,22 @@ Klik pada masing-masing aspek di bawah ini untuk melihat detail perbandingan alu
 [Tuliskan ...] 
 
 # 💡 Solusi
-[Tuliskan rancangan solusi yang ditawarkan. Sebutkan fitur-fitur unggulan dari Sistem Inventaris UKM yang akan dibuat dan bagaimana sistem tersebut dapat menyelesaikan masalah yang ada...]
+Sistem ini dibangun dari frustrasi nyata: grup WA yang penuh laporan barang, Excel yang isinya setengah benar, dan tidak ada yang tahu persis mana barang yang masih ada atau sudah lama hilang.
+
+- **Database Terpusat dengan Kodifikasi Otomatis:**<br>
+Setiap barang masuk langsung mendapat kode unik — tidak peduli ukurannya besar atau kecil. Struk pembelian bisa diunggah langsung. Tidak ada lagi aset yang hanya ada di ingatan pengurus lama.
+
+- **E-Form Peminjaman:**<br>
+Pengajuan lewat form digital, bukan PDF ke WA. Yang paling praktis: sistem langsung menolak kalau barang sedang dipinjam atau rusak. Admin tidak perlu cek manual satu per satu. Durasi maksimal peminjaman juga diatur di sini — ini yang selama ini tidak pernah punya standar.
+
+- **Digital Handover:**<br>
+Foto serah terima tidak lagi hilang di scroll WA. Peminjam wajib unggah foto kondisi barang waktu ambil dan waktu kembalikan. Admin verifikasi kondisi sebelum transaksi ditutup. Kalau ada kerusakan, ada buktinya.
+
+- **Dashboard Tracking & Notifikasi:**<br>
+Siapapun yang punya akses bisa lihat: barang mana yang keluar, siapa yang pegang, kapan jatuh tempo. Sistem kirim notifikasi otomatis kalau sudah lewat batas — tidak perlu admin jadi debt collector.
+
+- **Stock Opname & Minimum Stock Alert:**<br>
+Ada fitur audit terjadwal supaya pengecekan tidak lagi reaktif (alias nunggu kehabisan dulu baru panik). Barang habis pakai seperti ATK bisa dipasang ambang batas — sistem yang kasih tahu kalau sudah saatnya restock.
+
+- **Approval Write-Off & Arsip:**<br>
+Barang rusak atau hilang butuh persetujuan resmi sebelum dihapus dari daftar aktif. Datanya tidak benar-benar hilang — masuk ke tabel Arsip. Jadi waktu LPJ, riwayatnya masih bisa dipertanggungjawabkan.
