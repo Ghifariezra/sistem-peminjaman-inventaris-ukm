@@ -9,7 +9,9 @@
 | Ghifari Ezra Ramadhan | 4524210041 |
 
 # 🚨 Masalah
-[Deskripsikan kendala atau masalah utama yang saat ini dihadapi oleh UKM dalam mengelola pencatatan dan pelacakan barang inventaris mereka di sini...]
+Pengelolaan inventaris saat ini terkendala oleh sistem yang terfragmentasi dan minim standarisasi. Ketergantungan pada pencatatan manual dan database yang tidak menyeluruh hanya mencakup aset besar sering kali menyebabkan selisih data atau missing link antara catatan dan fisik barang. Masalah ini diperparah dengan absennya sistem kodifikasi unik, sehingga pelacakan barang secara spesifik menjadi sangat sulit dilakukan.
+
+Selain itu, terdapat risiko administratif yang tinggi karena ketiadaan dokumen serah terima formal dan durasi pinjam yang tidak diatur secara baku oleh organisasi. Minimnya jadwal stock opname rutin serta ketiadaan prosedur pemutihan aset yang jelas mengakibatkan database tetap dipenuhi data barang rusak atau hilang, yang pada akhirnya mengaburkan akuntabilitas laporan pertanggungjawaban UKM.
 
 # 🔍 Analisis
 **1. Aktor**
