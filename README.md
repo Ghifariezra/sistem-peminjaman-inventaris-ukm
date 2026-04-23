@@ -85,8 +85,75 @@
 ---
 
 ## ⚙️ 3. Use Case
-> [Tuliskan ...] 
+   
+## **👥 Ringaksan Aktor** 
 
+| Aktor |  Tujuan | Skenario Tindakan Utama |
+| :--- | :--- | :--- |
+| **Admin** | **Mendaftarkan Barang** | Menginput aset baru ke database agar tercatat secara digital. |
+| | **Mengecek Kondisi** | Memperbarui status fisik barang (contoh: dari 'Bagus' ke 'Rusak'). |
+| | **Menutup Pinjaman** | Memverifikasi fisik dan klik tombol **Kembali** untuk menyelesaikan transaksi. |
+| | **Audit Stok** | Mencocokkan jumlah fisik di gudang dengan data yang tampil di layar. |
+| **Notaris** | **Memvalidasi Permohonan** | Meninjau surat lampiran dan memberikan keputusan **ACC** atau **Tolak**. |
+| | **Melihat Laporan** | Mengakses riwayat peminjaman untuk kebutuhan evaluasi dan audit. |
+| **Peminjam** | **Mencari Barang** | Mengecek ketersediaan barang pada katalog sebelum mengajukan pinjam. |
+| | **Meminta Izin Pinjam** | Mengisi formulir digital dan melampirkan surat resmi organisasi. |
+| | **Melapor Serah Terima** | Mengunggah foto bukti fisik saat barang diambil maupun dikembalikan. |
+
+## **Detail Use Case**
+
+ ***A. Mendaftarkan Aset Baru***
+
+  **1. Aktor :** Admin 
+ - **Description :** Menambahkan barang baru ke dalam database agar bisa di pinjam lagi/Restock barang yang udah di kembalikan agar status bisa di pinjam lagi 
+  
+    **🎬 Skenario Admin**
+
+    *1. Admin memasukan detail barang (nama,kategori,jumlah*
+ 
+    *2. Sistem menghasilkan barcode/kode unik secara otomatis*
+
+    *3.Admin mengunggah foto struk pembelian sebagai bukti aset*
+
+    *4.Sistem menyimpan barang ke daftar inventaris aktif*
+
+***B. Mengajukan Peminjaman***
+
+**2. Aktor :** Pengguna/Peminjam 
+
+ - **Precondition:** Barang berstatus Tersedia (Hijau 🟢)
+   
+   **🎬 Skenario Pengguna/Peminjam**
+
+   *1. Peminjam memilih barang dari katalog/dashboard*
+ 
+    *2. Peminjam mengisi formulir durasi pinjam dan mengunggah surat organisasi*
+
+    *3. Sistem mengecek kelengkapan data*
+
+    *4. Sistem mengirimkan permintaan persetujuan kepada Notaris*
+
+- *Kondisi Akhir:* Status barang berubah menjadi Menunggu Persetujuan
+
+***C. Mengverifikasi Status Barang/Pengembalian Barang***
+
+**3. Aktor :** Admin
+   
+   - **🎬 Skenario Admin**
+        
+        *1. Admin memilih transaksi peminjaman yang berstatus Dipinjam (Kuning🟡) atau Terlambat (Merah🔴)*
+
+        *2. Peminjam menyerahkan fisik barang dan mengunggah foto kondisi saat ini*
+
+        *3. Admin memverifikasi kondisi fisik barang dengan foto serah terima awal*
+
+        *4. Admin mengonfirmasi pengembalian di sistem*
+
+        *5. Sistem mengubah status barang kembali menjadi Tersedia (Hijau🟢)*
+
+- *Kondisi Akhir:* Status barang otomatis berubah menjadi Tersedia (Hijau🟢) dan masuk ke tabel History.
+
+## **📊 Diagram Use Case**
 ---
 
 # 💡 Solusi
