@@ -20,7 +20,16 @@
 ---
 
 ## 📚 Referensi & Studi Literatur
-[Taruh tautan jurnal, buku, atau artikel yang jadi landasan teorimu di sini]
+Setiap alur dan fitur dalam sistem ini tidak dibangun sekadar berdasarkan asumsi, melainkan dirancang untuk menjawab akar masalah pengelolaan inventaris di lapangan. Berikut adalah rujukan literatur yang memvalidasi pendekatan pada proyek ini:
+
+* **Digitalisasi & Kodifikasi Terpusat:** Penggantian pencatatan manual (Excel/kertas) dengan *database* terpusat dan *generate* kode otomatis terbukti secara signifikan menekan angka *missing link* serta mencegah hilangnya jejak aset.
+  > 🔗 **Referensi:** [Sistem Peminjaman Barang Menggunakan QR Code Berbasis Aplikasi Android (JTEKSIS, 2024)](https://doi.org/10.47233/jteksis.v6i2.1350)
+
+* **E-Form & Otorisasi Berlapis:** Penerapan alur digital dengan *role-based access* (Admin, Notaris, Peminjam) menstandarisasi birokrasi, mempercepat proses *approval*, dan mengontrol kepatuhan durasi peminjaman secara sistematis.
+  > 🔗 **Referensi:** [Perancangan dan Implementasi Sistem Peminjaman Barang Berbasis Web (Remik, 2025)](http://doi.org/10.33395/remik.v9i1.14365)
+
+* **Akuntabilitas via Digital Handover:** Kewajiban memvalidasi kondisi fisik barang melalui unggahan foto saat serah terima memberikan bukti riwayat yang objektif, mencegah lepas tanggung jawab, dan menjamin validitas Laporan Pertanggungjawaban (LPJ).
+  > 🔗 **Referensi:** [Pengembangan Sistem Informasi Peminjaman, Pengembalian, dan Inventarisasi (Bulletin CSR, 2025)](https://hostjournals.com/bulletincsr/article/view/876)
 
 ---
 
