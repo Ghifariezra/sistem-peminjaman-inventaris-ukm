@@ -15,7 +15,13 @@
 # 📌 Informasi & Ruang Lingkup Proyek
 
 ## 🎯 Sasaran Pengguna
-[Jelaskan siapa yang akan memakai sistem ini, misal: Pengurus Bidang 4 UKM]
+Sistem Inventaris UKM ini dirancang untuk memfasilitasi koordinasi antara pengelola internal organisasi dan pihak luar yang berkepentingan, dengan rincian sebagai berikut:
+
+* **Pengurus Bidang 4 (Admin):** Sebagai pengelola utama yang bertanggung jawab melakukan input data barang baru, mengelola database inventaris, melacak posisi barang secara real-time, serta melakukan verifikasi fisik saat serah terima barang.
+
+* **Ketua & Bendahara UKM (Notaris):** Sebagai pihak berwenang yang melakukan otorisasi atau persetujuan (approval) terhadap permohonan peminjaman, memantau riwayat aset untuk kebutuhan audit, serta menyetujui penghapusan aset (write-off) jika barang hilang atau rusak.
+
+* **Pihak Eksternal (Peminjam):** Anggota UKM lain atau Himpunan Mahasiswa yang membutuhkan akses ke katalog barang untuk mengecek ketersediaan stok, melakukan pengajuan pinjaman melalui E-Form, dan melaporkan bukti dokumentasi serah terima.
 
 ---
 
