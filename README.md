@@ -9,19 +9,117 @@
 | Az-Zahra Putri| 4524210018 |
 | Ghifari Ezra Ramadhan | 4524210041 |
 
+<br>
+<br>
+
+# 📌 Informasi & Ruang Lingkup Proyek
+
+## 🎯 Sasaran Pengguna
+[Jelaskan siapa yang akan memakai sistem ini, misal: Pengurus Bidang 4 UKM]
+
 ---
 
-# 🎥 Video
+## 📚 Referensi & Studi Literatur
+[Taruh tautan jurnal, buku, atau artikel yang jadi landasan teorimu di sini]
+
+---
+
+## 💬 Hasil Wawancara SOP Inventaris UKM
+
+Klik pada masing-masing bagian di bawah ini untuk melihat detail daftar pertanyaan dan jawaban hasil wawancara terkait *SOP* yang sedang berjalan:
+
+<details>
+<summary><b>Bagian 1: Pencatatan & Data Masuk (<i>Input</i> Barang Baru)</b></summary>
+
+<br>
+
+**Q: Bagaimana *SOP* pencatatan ketika ada barang inventaris baru yang masuk/dibeli?**
+> Pencatatan saat ini masih dilakukan secara manual. Saat ada pembelian barang baru, *SOP* yang berjalan mewajibkan pengelola inventaris melampirkan struk atau nota fisik. Struk tersebut kemudian diserahkan kepada Bendahara untuk keperluan pencatatan harga dan koordinasi keuangan.
+
+**Q: Apakah ada sistem pelabelan atau pemberian kode unik (nomor seri/kodifikasi) untuk setiap barang? Jika ada, seperti apa formatnya?**
+> Belum ada sistem kodifikasi spesifik atau pemberian nomor seri (nomor unit) untuk pelacakan. Pelabelan fisik (seperti penempelan stiker nama) hanya dilakukan secara terbatas pada aset inventaris berukuran besar.
+
+**Q: Saat ini, media apa yang digunakan untuk menyimpan *database* barang? (Apakah buku tulis fisik, Excel, Google Sheets, atau lainnya?)**
+> Pendataan barang menggunakan Microsoft Excel, namun penggunaannya belum menyeluruh. *File* Excel tersebut saat ini hanya difokuskan untuk mendata barang-barang aset berukuran besar (contoh: lemari, AC, *printer*), sedangkan barang berukuran kecil belum terekap secara digital.
+
+</details>
+
+<details>
+<summary><b>Bagian 2: Peminjaman (Alur Keluar Barang)</b></summary>
+
+<br>
+
+**Q: Bagaimana alur pasti (*SOP*) jika ada anggota atau pihak luar yang ingin meminjam barang? (Mulai dari *request* sampai barang diberikan).**
+> Pihak eksternal (misalnya UKM lain) diwajibkan mengirimkan surat peminjaman resmi kepada Bidang 4. Bidang 4 menyediakan *template* surat peminjaman (contoh dari divisi RnD) untuk digunakan. Setelah surat diterima, pengurus Bidang 4 akan mengecek ketersediaan dan kondisi fisik barang. Barang dengan kondisi rusak secara otomatis tidak akan dipinjamkan.
+
+**Q: Apakah ada *form* peminjaman khusus atau bukti serah terima barang?**
+> Tidak ada formulir fisik atau Berita Acara Serah Terima (BAST) di atas kertas. Bukti serah terima dan pengembalian barang hanya mengandalkan dokumentasi berupa foto barang yang dikirimkan oleh peminjam melalui pesan *chat* kepada pengurus Bidang 4.
+
+**Q: Bagaimana cara kalian menentukan batas waktu maksimal peminjaman untuk suatu barang?**
+> Bidang 4 tidak menetapkan aturan baku mengenai durasi maksimal peminjaman. Batas waktu peminjaman sepenuhnya mengikuti tanggal yang diajukan oleh peminjam di dalam draf surat permohonan. Sistem ini sangat mengandalkan kesadaran dari pihak peminjam.
+
+</details>
+
+<details>
+<summary><b>Bagian 3: Pengembalian & Pelacakan (<i>Tracking</i>)</b></summary>
+
+<br>
+
+**Q: Bagaimana *SOP* pengecekan kondisi barang saat dikembalikan oleh peminjam?**
+> Pengecekan kondisi fisik barang secara langsung tatap muka (serah terima fisik) jarang dilakukan. *SOP* pengembalian saat ini hanya meminta pihak peminjam untuk mengirimkan bukti foto barang ke ruang *chat* sebagai konfirmasi bahwa barang telah dikembalikan ke tempatnya.
+
+**Q: Jika barang dikembalikan melewati batas waktu (telat) atau dalam kondisi rusak?**
+> Berdasarkan studi kasus sebelumnya (kerusakan tali pada barang RnD yang dipinjam oleh himpunan luar), jika barang dikembalikan dalam kondisi rusak, maka pihak UKM akan menuntut pertanggungjawaban penuh kepada organisasi peminjam yang bersangkutan untuk menyelesaikan masalah tersebut.
+
+**Q: Menggunakan sistem manual saat ini, bagaimana cara kalian melacak (*tracking*) siapa yang sedang memegang suatu barang jika barang tersebut tiba-tiba dibutuhkan?**
+> Belum ada mekanisme pelacakan khusus jika barang tiba-tiba dibutuhkan. Pemantauan hanya mengandalkan pengarsipan *soft file* surat peminjaman. Hal ini dikarenakan selama ini mayoritas peminjam mengembalikan barang tepat waktu sesuai tanggal peminjaman.
+
+</details>
+
+<details>
+<summary><b>Bagian 4: Perawatan & Pengecekan Rutin (<i>Stock Opname</i>)</b></summary>
+
+<br>
+
+**Q: Apakah ada jadwal rutin untuk mengecek kondisi fisik seluruh barang di tempat penyimpanan (*stock opname*)? Jika ya, seberapa sering?**
+> Tidak ada jadwal pengecekan fisik barang (*stock opname*) yang dilakukan secara rutin berkala. Pengecekan sering kali bersifat reaktif dan dadakan, khususnya untuk barang habis pakai (seperti ATK atau tinta). Jika barang terlihat habis secara fisik, pengurus baru akan melapor ke Bendahara untuk melakukan pengadaan baru.
+
+**Q: Bagaimana cara kalian mengklasifikasikan atau mencatat status kondisi barang saat ini? (Misal: Baik, Rusak Ringan, Rusak Berat).**
+> Pencatatan mengenai status kondisi fisik barang (baik atau rusak) masih dilakukan secara manual dan terbatas hanya pada barang-barang inventaris besar (aset utama).
+
+**Q: Apa kendala utama yang dirasakan saat harus mencocokkan data di catatan dengan jumlah barang fisik yang ada?**
+> Kendala terbesar yang dihadapi pengurus saat ini adalah seringnya terjadi selisih (*missing link*) antara data; di mana barang yang tercatat di dalam daftar pencatatan sering kali tidak dapat ditemukan wujud fisiknya di ruangan penyimpanan.
+
+</details>
+
+<details>
+<summary><b>Bagian 5: Penghapusan/Pemutihan Barang Keluar</b></summary>
+
+<br>
+
+**Q: Jika ada barang yang sudah rusak total atau hilang, bagaimana *SOP* untuk menghapus/memutihkan barang tersebut dari daftar inventaris aktif?**
+> Belum ada prosedur pemutihan (penghapusan data barang) dari daftar inventaris aktif. Jika terdapat barang yang rusak total atau hilang, *SOP*-nya adalah melaporkan kejadian tersebut kepada Ketua, dilanjutkan ke Bendahara untuk proses penggantian barang.
+
+**Q: Apakah rekam jejak (*history*) barang yang sudah rusak/hilang tersebut tetap disimpan atau langsung dibuang datanya?**
+> Rekam jejak (*history*) barang yang rusak atau hilang tidak dihapus dari sistem pencatatan. Alih-alih dihilangkan, data tersebut diperbarui keterangannya menjadi dalam proses servis (untuk barang elektronik) atau dalam proses penggantian dengan unit yang baru.
+
+</details>
+
+---
+
+### 🎥 Video Dokumentasi 
 [![Watch the video](https://img.youtube.com/vi/uy4Y2SLEoug/maxresdefault.jpg)](https://youtu.be/uy4Y2SLEoug)
 *(Klik gambar di atas untuk memutar video)*
 
----
+<br>
+<br>
 
 # 🚨 Masalah
 
-> Pengelolaan inventaris saat ini terkendala oleh sistem yang terfragmentasi dan minim standarisasi. Ketergantungan pada pencatatan manual dan database yang tidak menyeluruh hanya mencakup aset besar sering kali menyebabkan selisih data atau *missing link* antara catatan dan fisik barang. Masalah ini diperparah dengan absennya sistem kodifikasi unik, sehingga pelacakan barang secara spesifik menjadi sangat sulit dilakukan.
->
-> Selain itu, terdapat risiko administratif yang tinggi karena ketiadaan dokumen serah terima formal dan durasi pinjam yang tidak diatur secara baku oleh organisasi. Minimnya jadwal *stock opname* rutin serta ketiadaan prosedur pemutihan aset yang jelas mengakibatkan database tetap dipenuhi data barang rusak atau hilang, yang pada akhirnya mengaburkan akuntabilitas laporan pertanggungjawaban UKM.
+## 📖 Latar Belakang Proyek
+Pengelolaan inventaris saat ini terkendala oleh sistem yang terfragmentasi dan minim standarisasi. Ketergantungan pada pencatatan manual dan *database* yang tidak menyeluruh—karena hanya mencakup aset besar sering kali menyebabkan selisih data atau *missing link* antara catatan dan wujud fisik barang. Masalah ini diperparah dengan absennya sistem kodifikasi unik, sehingga pelacakan posisi barang secara spesifik menjadi sangat sulit dilakukan.
+
+Selain itu, terdapat risiko administratif yang tinggi karena ketiadaan dokumen serah terima formal dan durasi pinjam yang tidak diatur secara baku oleh organisasi. Minimnya jadwal *stock opname* rutin serta ketiadaan prosedur pemutihan aset yang jelas mengakibatkan *database* tetap dipenuhi data barang rusak atau hilang, yang pada akhirnya mengaburkan akuntabilitas dan validitas Laporan Pertanggungjawaban (LPJ) UKM.
 
 ---
 
@@ -109,7 +207,7 @@
   
     **🎬 Skenario Admin**
 
-    *1. Admin memasukan detail barang (nama,kategori,jumlah)*
+    *1. Admin memasukan detail barang (nama,kategori,jumlah*
  
     *2. Sistem menghasilkan barcode/kode unik secara otomatis*
 
@@ -154,8 +252,10 @@
 - *Kondisi Akhir:* Status barang otomatis berubah menjadi Tersedia (Hijau🟢) dan masuk ke tabel History.
 
 ## **📊 Diagram Use Case**
-![alt text](image-1.png)
----
+
+
+<br>
+<br>
 
 # 💡 Solusi
 
