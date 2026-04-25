@@ -109,7 +109,7 @@
   
     **🎬 Skenario Admin**
 
-    *1. Admin memasukan detail barang (nama,kategori,jumlah*
+    *1. Admin memasukan detail barang (nama,kategori,jumlah)*
  
     *2. Sistem menghasilkan barcode/kode unik secara otomatis*
 
@@ -154,6 +154,7 @@
 - *Kondisi Akhir:* Status barang otomatis berubah menjadi Tersedia (Hijau🟢) dan masuk ke tabel History.
 
 ## **📊 Diagram Use Case**
+![alt text](image-1.png)
 ---
 
 # 💡 Solusi
