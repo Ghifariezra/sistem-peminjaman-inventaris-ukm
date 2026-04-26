@@ -216,7 +216,7 @@ Selain itu, terdapat risiko administratif yang tinggi karena ketiadaan dokumen s
 ## **Detail Use Case**
 
 
-## A. Mendaftarkan Aset Baru
+ ###  A. Mendaftarkan Aset Baru
 
 **Aktor:** Admin  
 **Deskripsi:** Menambahkan barang baru ke dalam database agar dapat dipinjam kembali atau melakukan restock barang yang sudah dikembalikan.
@@ -228,7 +228,7 @@ Selain itu, terdapat risiko administratif yang tinggi karena ketiadaan dokumen s
 4. Sistem menyimpan barang ke daftar inventaris aktif
 
 
-## B. Mengajukan Peminjaman
+### B. Mengajukan Peminjaman
 
 **Aktor:** Pengguna  
 **Precondition:** Barang berstatus **Tersedia (🟢)**
@@ -243,7 +243,7 @@ Selain itu, terdapat risiko administratif yang tinggi karena ketiadaan dokumen s
 Status barang berubah menjadi **Menunggu Persetujuan**
 
 
-## C. Verifikasi & Pengembalian Barang
+### C. Verifikasi & Pengembalian Barang
 
 **Aktor:** Admin  
 
@@ -259,7 +259,7 @@ Status barang berubah menjadi **Menunggu Persetujuan**
 **Kondisi Akhir:**  
 Status barang otomatis berubah menjadi **Tersedia (🟢)** dan masuk ke tabel **History**
 
-## **📊 Diagram Use Case**
+### **📊 Diagram Use Case**
 ![alt text](image-2.png)
 
 <br>
