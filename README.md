@@ -1,5 +1,5 @@
 # 📦 Topik Proyek: Sistem Inventaris UKM
-
+## Mata Kuliah: Analisis dan Perancangan Berorientasi Objek (A)
 ## 👥 Anggota Kelompok 9
 | **Nama** | **NPM** |
 | :--- | :--- |
@@ -9,7 +9,6 @@
 | Az-Zahra Putri| 4524210018 |
 | Ghifari Ezra Ramadhan | 4524210041 |
 
-<br>
 <br>
 
 # 📌 Informasi & Ruang Lingkup Proyek
@@ -122,17 +121,22 @@ Klik pada masing-masing bagian di bawah ini untuk melihat detail daftar pertanya
 
 ---
 
-### 🎥 Video Dokumentasi 
+### 🎥 Wawancara 
+
+#### Narasumber: Nadiyah Qasamah sebagai Ketua Pengurus Bidang 4 (Publikasi & Inventaris UKM)
+* Bertanggung jawab atas pengelolaan inventaris dan alur peminjaman barang
+* Terlibat langsung dalam operasional pencatatan dan koordinasi peminjaman
+
+#### Video Dokumentasi 
 [![Watch the video](https://img.youtube.com/vi/uy4Y2SLEoug/maxresdefault.jpg)](https://youtu.be/uy4Y2SLEoug)
 *(Klik gambar di atas untuk memutar video)*
 
-<br>
 <br>
 
 # 🚨 Masalah
 
 ## 📖 Latar Belakang Proyek
-Pengelolaan inventaris saat ini terkendala oleh sistem yang terfragmentasi dan minim standarisasi. Ketergantungan pada pencatatan manual dan *database* yang tidak menyeluruh—karena hanya mencakup aset besar sering kali menyebabkan selisih data atau *missing link* antara catatan dan wujud fisik barang. Masalah ini diperparah dengan absennya sistem kodifikasi unik, sehingga pelacakan posisi barang secara spesifik menjadi sangat sulit dilakukan.
+Pengelolaan inventaris saat ini terkendala oleh sistem yang terfragmentasi dan minim standarisasi. Ketergantungan pada pencatatan manual dan *database* yang tidak menyeluruh karena hanya mencakup aset besar sering kali menyebabkan selisih data atau *missing link* antara catatan dan wujud fisik barang. Masalah ini diperparah dengan absennya sistem kodifikasi unik, sehingga pelacakan posisi barang secara spesifik menjadi sangat sulit dilakukan.
 
 Selain itu, terdapat risiko administratif yang tinggi karena ketiadaan dokumen serah terima formal dan durasi pinjam yang tidak diatur secara baku oleh organisasi. Minimnya jadwal *stock opname* rutin serta ketiadaan prosedur pemutihan aset yang jelas mengakibatkan *database* tetap dipenuhi data barang rusak atau hilang, yang pada akhirnya mengaburkan akuntabilitas dan validitas Laporan Pertanggungjawaban (LPJ) UKM.
 
@@ -197,9 +201,9 @@ Selain itu, terdapat risiko administratif yang tinggi karena ketiadaan dokumen s
 
 ---
 
-## ⚙️ 3. Use Case
+## ⚙️ Bagian 3: Use Case
    
-## **👥 Ringaksan Aktor** 
+### **👥 Ringaksan Aktor** 
 
 | Aktor |  Tujuan | Skenario Tindakan Utama |
 | :--- | :--- | :--- |
@@ -213,27 +217,27 @@ Selain itu, terdapat risiko administratif yang tinggi karena ketiadaan dokumen s
 | | **Meminta Izin Pinjam** | Mengisi formulir digital dan melampirkan surat resmi organisasi. |
 | | **Melapor Serah Terima** | Mengunggah foto bukti fisik saat barang diambil maupun dikembalikan. |
 
-## **Detail Use Case**
+### **Detail Use Case**
 
 
- ###  A. Mendaftarkan Aset Baru
+ ####  **A. Mendaftarkan Aset Baru**
 
 **Aktor:** Admin  
 **Deskripsi:** Menambahkan barang baru ke dalam database agar dapat dipinjam kembali atau melakukan restock barang yang sudah dikembalikan.
 
-### 🎬 Skenario Admin
+#### 🎬 Skenario Admin
 1. Admin memasukkan detail barang (nama, kategori, jumlah)
 2. Sistem menghasilkan barcode / kode unik secara otomatis
 3. Admin mengunggah foto struk pembelian sebagai bukti aset
 4. Sistem menyimpan barang ke daftar inventaris aktif
 
 
-### B. Mengajukan Peminjaman
+#### **B. Mengajukan Peminjaman**
 
 **Aktor:** Pengguna  
 **Precondition:** Barang berstatus **Tersedia (🟢)**
 
-### 🎬 Skenario Pengguna
+#### 🎬 Skenario Pengguna
 1. Peminjam memilih barang dari dashboard
 2. Peminjam mengisi formulir durasi pinjam dan mengunggah surat organisasi
 3. Sistem mengecek kelengkapan data
@@ -243,11 +247,11 @@ Selain itu, terdapat risiko administratif yang tinggi karena ketiadaan dokumen s
 Status barang berubah menjadi **Menunggu Persetujuan**
 
 
-### C. Verifikasi & Pengembalian Barang
+#### **C. Verifikasi & Pengembalian Barang**
 
 **Aktor:** Admin  
 
-### 🎬 Skenario Admin
+#### 🎬 Skenario Admin
 1. Admin memilih transaksi peminjaman dengan status:
    - Dipinjam (🟡)
    - Terlambat (🔴)
@@ -259,10 +263,9 @@ Status barang berubah menjadi **Menunggu Persetujuan**
 **Kondisi Akhir:**  
 Status barang otomatis berubah menjadi **Tersedia (🟢)** dan masuk ke tabel **History**
 
-### **📊 Diagram Use Case**
+#### **Diagram Use Case**
 ![alt text](image-2.png)
 
-<br>
 <br>
 
 # 💡 Solusi
@@ -271,12 +274,12 @@ Status barang otomatis berubah menjadi **Tersedia (🟢)** dan masuk ke tabel **
 
 - 🏷️ **Database Terpusat dengan Kodifikasi Otomatis:** Setiap barang masuk langsung mendapat kode unik tidak peduli ukurannya besar atau kecil. Struk pembelian bisa diunggah langsung. Tidak ada lagi aset yang hanya ada di ingatan pengurus lama.
 
-- 📝 **E-Form Peminjaman:** Pengajuan lewat form digital, bukan PDF ke WA. Yang paling praktis: sistem langsung menolak kalau barang sedang dipinjam atau rusak. Admin tidak perlu cek manual satu per satu. Durasi maksimal peminjaman juga diatur di sini — ini yang selama ini tidak pernah punya standar.
+- 📝 **E-Form Peminjaman:** Pengajuan lewat form digital, bukan PDF ke WA. Yang paling praktis: sistem langsung menolak kalau barang sedang dipinjam atau rusak. Admin tidak perlu cek manual satu per satu. Durasi maksimal peminjaman juga diatur di sini yang selama ini tidak pernah punya standar.
 
 - 📸 **Digital Handover:** Foto serah terima tidak lagi hilang di scroll WA. Peminjam wajib unggah foto kondisi barang waktu ambil dan waktu kembalikan. Admin verifikasi kondisi sebelum transaksi ditutup. Kalau ada kerusakan, ada buktinya.
 
-- 🔔 **Dashboard Tracking & Notifikasi:** Siapapun yang punya akses bisa lihat: barang mana yang keluar, siapa yang pegang, kapan jatuh tempo. Sistem kirim notifikasi otomatis kalau sudah lewat batas — tidak perlu admin jadi *debt collector*.
+- 🔔 **Dashboard Tracking & Notifikasi:** Siapapun yang punya akses bisa lihat: barang mana yang keluar, siapa yang pegang, kapan jatuh tempo. Sistem kirim notifikasi otomatis kalau sudah lewat batas sehingga tidak perlu admin jadi *debt collector*.
 
-- 📊 **Stock Opname & Minimum Stock Alert:** Ada fitur audit terjadwal supaya pengecekan tidak lagi reaktif (alias nunggu kehabisan dulu baru panik). Barang habis pakai seperti ATK bisa dipasang ambang batas — sistem yang kasih tahu kalau sudah saatnya *restock*.
+- 📊 **Stock Opname & Minimum Stock Alert:** Ada fitur audit terjadwal supaya pengecekan tidak lagi reaktif (alias nunggu kehabisan dulu baru panik). Barang habis pakai seperti ATK bisa dipasang ambang batas dengan  sistem yang kasih tahu kalau sudah saatnya *restock*.
 
-- 📂 **Approval Write-Off & Arsip:** Barang rusak atau hilang butuh persetujuan resmi sebelum dihapus dari daftar aktif. Datanya tidak benar-benar hilang — masuk ke tabel Arsip. Jadi waktu LPJ, riwayatnya masih bisa dipertanggungjawabkan.
+- 📂 **Approval Write-Off & Arsip:** Barang rusak atau hilang butuh persetujuan resmi sebelum dihapus dari daftar aktif. Datanya tidak benar-benar hilang akan masuk ke tabel Arsip. Jadi waktu LPJ, riwayatnya masih bisa dipertanggungjawabkan.
