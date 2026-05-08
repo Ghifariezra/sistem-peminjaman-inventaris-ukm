@@ -10,7 +10,7 @@
 | Ghifari Ezra Ramadhan | 4524210041 |
 
 <br>
-<br>
+<br
 
 # 📌 Informasi & Ruang Lingkup Proyek
 
@@ -239,7 +239,7 @@ Selain itu, terdapat risiko administratif yang tinggi karena ketiadaan dokumen s
 3. Sistem mengecek kelengkapan data
 4. Sistem mengirimkan permintaan persetujuan kepada Notaris
 
-**Kondisi Akhir:**  
+**Kondisi Akhir:** 
 Status barang berubah menjadi **Menunggu Persetujuan**
 
 
@@ -261,6 +261,9 @@ Status barang otomatis berubah menjadi **Tersedia (🟢)** dan masuk ke tabel **
 
 ### **📊 Diagram Use Case**
 ![alt text](image-2.png)
+
+### **Class Diagram**
+![alt text](image-3.png)
 
 <br>
 <br>
