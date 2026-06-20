@@ -270,6 +270,9 @@ Status barang otomatis berubah menjadi **Tersedia (🟢)** dan masuk ke tabel **
 ### **Class Diagram**
 ![alt text](image-3.png)
 
+### **State Diagram**
+![alt text](state-diagram.jpeg)
+
 <br>
 
 # 💡 Solusi
