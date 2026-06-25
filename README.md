@@ -274,7 +274,32 @@ Status barang otomatis berubah menjadi **Tersedia (🟢)** dan masuk ke tabel **
 ![alt text](state-diagram.jpeg)
 
 ### **Sequence Diagram**
-![alt text](seq-diagram.jpeg)
+1. Mencari Barang (Cek Katalog) – Peminjam
+![alt text](seq-diagram-1.jpeg) 
+
+2. Upload Surat Resmi (Mengajukan Peminjaman) – Peminjam
+![alt text](seq-diagram-2.jpeg)
+
+3. Upload Foto Bukti (Serah Terima)
+![alt text](seq-diagram-3.jpeg)
+
+4. Tinjau Surat & Data Permohonan – Notaris
+![alt text](seq-diagram-4.jpeg)
+
+5. Melihat Laporan Riwayat Peminjaman – Notaris
+![alt text](seq-diagram-5.jpeg)
+
+6. Mendaftarkan Barang (Input Aset Baru) – Admin
+![alt text](seq-diagram-6.jpeg)
+
+7. Pilih Status Kondisi Barang (Bagus/Rusak/Write-off) – Admin
+![alt text](seq-diagram-7.jpeg)
+
+8. Verifikasi Fisik & Foto Serah Terima (Menutup Pinjaman) – Admin
+![alt text](seq-diagram-8.jpeg)
+
+9. Cocokkan Fisik vs Data (Audit Stok / Stock Opname) – Admin
+![alt text](seq-diagram-9.jpeg)
 
 ### **Activity Diagram**
 ![alt text](<Activity - Diagram.jpeg>)
