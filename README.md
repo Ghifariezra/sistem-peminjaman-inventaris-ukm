@@ -9,11 +9,12 @@
 | Az-Zahra Putri| 4524210018 |
 | Ghifari Ezra Ramadhan | 4524210041 |
 
-<br>
-<br
+## PPT Kelompok 9 - Sistem Inventaris UKM
+[![PPT](cover/PPT%20Cover.jpeg)](https://canva.link/c769melb7vmp3gc)
+## Presentasi UAS Kelompok 9 - Sistem Inventaris UKM
+[![Video Presentasi](cover/Presentasi%20UAS.jpeg)](#)
 
 # 📌 Informasi & Ruang Lingkup Proyek
-
 ## 🎯 Sasaran Pengguna
 Sistem Inventaris UKM ini dirancang untuk memfasilitasi koordinasi antara pengelola internal organisasi dan pihak luar yang berkepentingan, dengan rincian sebagai berikut:
 
@@ -129,7 +130,7 @@ Klik pada masing-masing bagian di bawah ini untuk melihat detail daftar pertanya
 * Terlibat langsung dalam operasional pencatatan dan koordinasi peminjaman
 
 #### Video Dokumentasi 
-[![Watch the video](https://img.youtube.com/vi/uy4Y2SLEoug/maxresdefault.jpg)](https://youtu.be/uy4Y2SLEoug)
+[![Watch the video](cover/Wawancara%20Cover.jpeg)](https://youtu.be/uy4Y2SLEoug)
 *(Klik gambar di atas untuk memutar video)*
 
 <br>
