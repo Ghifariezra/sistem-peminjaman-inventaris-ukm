@@ -12,7 +12,7 @@
 ## PPT Kelompok 9 - Sistem Inventaris UKM
 [![PPT](cover/PPT%20Cover.jpeg)](https://canva.link/c769melb7vmp3gc)
 ## Presentasi UAS Kelompok 9 - Sistem Inventaris UKM
-[![Video Presentasi](cover/Presentasi%20UAS.jpeg)](#)
+[![Video Presentasi](cover/Presentasi%20UAS.jpeg)](https://youtu.be/pVjkFCvK2k8)
 
 # 📌 Informasi & Ruang Lingkup Proyek
 ## 🎯 Sasaran Pengguna
@@ -322,3 +322,30 @@ Status barang otomatis berubah menjadi **Tersedia (🟢)** dan masuk ke tabel **
 - 📊 **Stock Opname & Minimum Stock Alert:** Ada fitur audit terjadwal supaya pengecekan tidak lagi reaktif (alias nunggu kehabisan dulu baru panik). Barang habis pakai seperti ATK bisa dipasang ambang batas dengan  sistem yang kasih tahu kalau sudah saatnya *restock*.
 
 - 📂 **Approval Write-Off & Arsip:** Barang rusak atau hilang butuh persetujuan resmi sebelum dihapus dari daftar aktif. Datanya tidak benar-benar hilang akan masuk ke tabel Arsip. Jadi waktu LPJ, riwayatnya masih bisa dipertanggungjawabkan.
+
+## DOKUMEN PEMBAGIAN TUGAS PROYEK
+SISTEM INVENTARIS UKM - KELOMPOK 9
+1. Az-Zahra Putri  
+- Merumuskan bagian Sasaran Pengguna.  
+- Menyusun Latar Belakang Proyek.  
+- Merancang Sequence Diagram untuk Bagian 7 hingga 9.  
+- Mendesain UI Dashboard Peminjam.  
+2. Dheka Airlangga  
+- Merancang Use Case Diagram.  
+- Merancang Class Diagram.  
+- Merancang Activity Diagram.  
+- Mendesain UI Digital Handover.  
+3. Maghfiroh Lisabiliana  
+- Menyusun Referensi dan Studi Literatur.  
+- Melakukan Analisis Aktor.  
+- Merancang Sequence Diagram untuk Bagian 4 hingga 6.
+- Mendesain UI Dashboard Peminjam(E-Form).  
+4. Ghifari Ezra Ramadhan  
+- Merancang State Diagram.  
+- Merumuskan bagian Solusi sistem.  
+- Mendesain UI Dashboard Notaris.  
+5. Naila Putri Fahel  
+- Menyusun dan mendokumentasikan Hasil Wawancara. 
+- Melakukan Analisis Perbandingan Standar Operasional Prosedur (SOP).  
+- Merancang Sequence Diagram untuk Bagian 1 hingga 3.  
+- Mendesain UI Dashboard Admin.
